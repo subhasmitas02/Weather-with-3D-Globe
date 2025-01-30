@@ -1,4 +1,4 @@
-// globe.js - Handling globe initialization and location plotting
+// globe.js - Handling globe initialization and location plot
 
 
 function showLocationOnGlobe(lat, lon) {
