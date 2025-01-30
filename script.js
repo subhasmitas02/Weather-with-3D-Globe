@@ -1,8 +1,8 @@
 const apiKey = "Your_API_Key"; // OpenWeatherMap API key
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&"; // Weather API URL
-const geoApiUrl = "https://open-weather13.p.rapidapi.com/city"; // Corrected RapidAPI Geo API URL
+const geoApiUrl = "https://open-weather13.p.rapidapi.com/city"; // RapidAPI Geo API URL
 const rapidApiHost = "open-weather13.p.rapidapi.com"; // RapidAPI Geo API host
-const rapidApiKey = "Your_Rapid_API_Key"; //"8ff80481a7msha6df5f218296c87p1dac6cjsne40a0442185d"; // RapidAPI key
+const rapidApiKey = "Your_Rapid_API_Key"; // RapidAPI key
 
 const searchBox = document.querySelector("#searchBox");
 const searchBtn = document.querySelector(".search-button");
