@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Weather App</title>
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- Link for icons like wind, humidity -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Link for icons like GitHub, LinkedIn -->
+    <link href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="day-night-container">
+            <img class="day-night-img" src="assets/images/sun.png">
+        </div>
+        <h1>Weather Forecast</h1>
+    </div>
+
+    <div class="main-container">
+        <div class="container">
+            <!--------------------- search box ----------------------->
+            <div class="weather-search">
+                <div class="autocomplete">
+                    <input id="searchBox" type="text" class="search-box" placeholder="Enter city name">
+                    <div id="autocomplete-list" class="autocomplete-items"></div>
+                </div>
+                <button class="search-button"><img src="assets/icons/Search-icon.png" alt=""></button>
+            </div>
+    
+            <!-------------------- error ----------------------------->
+            <div class="error">
+                <img class="container-bg-image" src="assets/images/moon.png" alt="">
+                <p class="error-msg"><span>!</span> Invalid city name</p>
+            </div>
+            
+            <!--------------------- Weather Details ------------------->
+            <div class="weather-details">
+    
+                <!------- Before Search ------>
+                <div class="before-search">
+                    <img class="container-bg-image" src="assets/images/moon.png" alt="">
+                    <p>Enter your city to view the weather details</p>
+                </div>
+    
+                <!------- After Search ------>
+                <div class="after-search">
+                    <img src="assets/weather images/haze.png" alt="" class="weather-now-img">
+                    <h1 class="temp">17°c</h1>
+                    <h2 class="city">New York</h2>
+    
+                    <div class="weather-info"> <!------- Weather information ------>
+    
+                        <!---- Humidity ---->
+                        <div class="humidity">
+                            <i class="fa-solid fa-droplet"></i>
+                            <div class="amount">
+                                <h2 class="humidity-amount">48%</h2>
+                                <p>Humidity</p>
+                            </div>
+                        </div>
+    
+                        <!---- Wind Speed ---->
+                        <div class="wind-speed">
+                            <i class="fa-solid fa-wind"></i>
+                            <div class="amount">
+                                <h2 class="wind-amount">48 km/h</h2>
+                                <p>Wind Speed</p>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                </div>
+                
+            </div>
+        </div>
+
+
+        <!------------ For the Globe ------------------------------------------------->
+        <div id="globe-container"></div> 
+    </div>
+    
+
+    <!------------------------ Footer ------------------------>
+    <div class="footer">
+        <p>Designed By - <span>Subhasmita</span> | <a href="https://github.com/subhasmitas02/"><i class="bx bxl-github"></i></a>
+            <a href="https://www.linkedin.com/in/subhasmita867544/"><i class="bx bxl-linkedin"></i></a></p>
+    </div>
+
+    <!-- Globe Canvas will be automatically created by Three.js -->
+
+    <!-- Link to Required Libraries
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://unpkg.com/three-globe@2.24.1"></script> -->
+
+    <!-- <script src="three.min.js"></script> -->
+
+    <!-- Include necessary JS files --> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script> 
+    <script src="https://unpkg.com/three-globe"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/three@0.127.0/examples/js/controls/OrbitControls.js"></script>
+     <script src="globe.js"></script> 
+     <script src="script.js"></script>
+
+</body>
+</html>
