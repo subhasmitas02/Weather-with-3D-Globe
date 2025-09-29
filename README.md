@@ -27,7 +27,7 @@ Visit Live App: [Weather with 3D Globe]()
 - Hit the search icon, press Enter, or choose from the dropdown list to get real-time weather data.
 - Explore detailed weather insights through a responsive dashboard and see the selected location highlighted on the interactive 3D globe.
 
-## Tech Stack 🛠️
+## Tech Stack 
 
 - **React.js** – Frontend framework for building UI components  
 - **Three.js** – For rendering the interactive 3D Earth  
