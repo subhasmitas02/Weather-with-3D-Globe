@@ -16,9 +16,7 @@ Visit Live App: [Weather with 3D Globe]()
 - Added core functions and utilities to the dashboard ✅  
 - Polished and finalized the dashboard design ✅  
 - Made the app fully responsive for mobile devices ✅  
-- Designed a loading screen and landing page ✅  
-- Released the final product ✅  
-- Identified and fixed bugs ✅  
+- Designed a loading screen and landing page ✅   
 
 
 ## Features
